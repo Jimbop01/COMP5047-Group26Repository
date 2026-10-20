@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Vysm4MF7EfG3u8SP5I1igQ" name="COMP5047CW">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_WH7QAMF7EfG3u8SP5I1igQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_FNx5QMbwEfGrbP2CwrPsNQ" name="Operator Subsystem" useCase="_KoKeUMbwEfGrbP2CwrPsNQ _UMoc8Mx8EfG_CqKQDH-M4g _YjUJUMx8EfG_CqKQDH-M4g _dJd_oMx9EfG_CqKQDH-M4g _oWJTcMx9EfG_CqKQDH-M4g _9EDF4Mx9EfG_CqKQDH-M4g _H4UgwMx-EfG_CqKQDH-M4g _WUs_4MyAEfG_CqKQDH-M4g _6ufcYMyAEfG_CqKQDH-M4g _Bon88MyBEfG_CqKQDH-M4g _IDjZAMyBEfG_CqKQDH-M4g _nMvekMyBEfG_CqKQDH-M4g _42Y10MyBEfG_CqKQDH-M4g _CaZGMMyDEfG_CqKQDH-M4g _oRf1QMyDEfG_CqKQDH-M4g _6-tiUMyDEfG_CqKQDH-M4g _eN8QMMyEEfG_CqKQDH-M4g _oZxyEMyEEfG_CqKQDH-M4g _wuy8QMyEEfG_CqKQDH-M4g _9dHpAMyEEfG_CqKQDH-M4g">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_KoKeUMbwEfGrbP2CwrPsNQ" name="Tenant Management" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WT4LYMx-EfG_CqKQDH-M4g" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kDpcIMyAEfG_CqKQDH-M4g" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_2iBmgMyBEfG_CqKQDH-M4g" name="ExtensionPoint3"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_UMoc8Mx8EfG_CqKQDH-M4g" name="Operator Management" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_w6qSMMx9EfG_CqKQDH-M4g" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_AOIcQMx-EfG_CqKQDH-M4g" name="ExtensionPoint2"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_YjUJUMx8EfG_CqKQDH-M4g" name="Subscription and Metering Management" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_NbSAwMyDEfG_CqKQDH-M4g" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_t6gsMMyDEfG_CqKQDH-M4g" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9oZhYMyDEfG_CqKQDH-M4g" name="ExtensionPoint3"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dJd_oMx9EfG_CqKQDH-M4g" name="Operator Access Control" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_w6bBoMx9EfG_CqKQDH-M4g" extendedCase="_UMoc8Mx8EfG_CqKQDH-M4g" extensionLocation="_w6qSMMx9EfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_9EDF4Mx9EfG_CqKQDH-M4g" name="Operator Audit Logging" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_AN0TMMx-EfG_CqKQDH-M4g" extendedCase="_UMoc8Mx8EfG_CqKQDH-M4g" extensionLocation="_AOIcQMx-EfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_H4UgwMx-EfG_CqKQDH-M4g" name="Automated Tenant Onboarding" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_WTr-IMx-EfG_CqKQDH-M4g" extendedCase="_KoKeUMbwEfGrbP2CwrPsNQ" extensionLocation="_WT4LYMx-EfG_CqKQDH-M4g"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xUZggMyAEfG_CqKQDH-M4g" name="ExtensionPoint2"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_WUs_4MyAEfG_CqKQDH-M4g" name="Customisation" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_kDZkgMyAEfG_CqKQDH-M4g" extendedCase="_KoKeUMbwEfGrbP2CwrPsNQ" extensionLocation="_kDpcIMyAEfG_CqKQDH-M4g"/>
+      <extend xmi:type="uml:Extend" xmi:id="_xUBGAMyAEfG_CqKQDH-M4g" extendedCase="_H4UgwMx-EfG_CqKQDH-M4g" extensionLocation="_xUZggMyAEfG_CqKQDH-M4g"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_As6ioMyBEfG_CqKQDH-M4g" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_MwIc4MyBEfG_CqKQDH-M4g" name="ExtensionPoint4"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_NaxVUMyBEfG_CqKQDH-M4g" name="ExtensionPoint5"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6ufcYMyAEfG_CqKQDH-M4g" name="Tenant Branding" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_AsoOwMyBEfG_CqKQDH-M4g" extendedCase="_WUs_4MyAEfG_CqKQDH-M4g" extensionLocation="_As6ioMyBEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Bon88MyBEfG_CqKQDH-M4g" name="Colour Schemes" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_Mv5zYMyBEfG_CqKQDH-M4g" extendedCase="_WUs_4MyAEfG_CqKQDH-M4g" extensionLocation="_MwIc4MyBEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_IDjZAMyBEfG_CqKQDH-M4g" name="Typography" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_Nam9QMyBEfG_CqKQDH-M4g" extendedCase="_WUs_4MyAEfG_CqKQDH-M4g" extensionLocation="_NaxVUMyBEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_nMvekMyBEfG_CqKQDH-M4g" name="Tenant LIfecycle controls" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_2hnW0MyBEfG_CqKQDH-M4g" extendedCase="_KoKeUMbwEfGrbP2CwrPsNQ" extensionLocation="_2iBmgMyBEfG_CqKQDH-M4g"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__CaTMMyBEfG_CqKQDH-M4g" name="ExtensionPoint2"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_42Y10MyBEfG_CqKQDH-M4g" name="Purge Tenant" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="__B-1YMyBEfG_CqKQDH-M4g" extendedCase="_nMvekMyBEfG_CqKQDH-M4g" extensionLocation="__CaTMMyBEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_CaZGMMyDEfG_CqKQDH-M4g" name="Subscription configuration" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_NayRgMyDEfG_CqKQDH-M4g" extendedCase="_YjUJUMx8EfG_CqKQDH-M4g" extensionLocation="_NbSAwMyDEfG_CqKQDH-M4g"/>
+      <include xmi:type="uml:Include" xmi:id="_fw5GIMyDEfG_CqKQDH-M4g" addition="_42Y10MyBEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_oRf1QMyDEfG_CqKQDH-M4g" name="Resource usage metering" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_t6NKMMyDEfG_CqKQDH-M4g" extendedCase="_YjUJUMx8EfG_CqKQDH-M4g" extensionLocation="_t6gsMMyDEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6-tiUMyDEfG_CqKQDH-M4g" name="Automated B2B Invoicing" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_9oK34MyDEfG_CqKQDH-M4g" extendedCase="_YjUJUMx8EfG_CqKQDH-M4g" extensionLocation="_9oZhYMyDEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_oWJTcMx9EfG_CqKQDH-M4g" name="Global and Cross University Services" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kC3cMMyEEfG_CqKQDH-M4g" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_v9e0EMyEEfG_CqKQDH-M4g" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_8oJv4MyEEfG_CqKQDH-M4g" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DWSb0MyFEfG_CqKQDH-M4g" name="ExtensionPoint4"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_eN8QMMyEEfG_CqKQDH-M4g" name="Centralised AI/ML Model Management" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_kCmWcMyEEfG_CqKQDH-M4g" extendedCase="_oWJTcMx9EfG_CqKQDH-M4g" extensionLocation="_kC3cMMyEEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_oZxyEMyEEfG_CqKQDH-M4g" name="Cross-Tenant Benchmarking" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_v9KD8MyEEfG_CqKQDH-M4g" extendedCase="_oWJTcMx9EfG_CqKQDH-M4g" extensionLocation="_v9e0EMyEEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_wuy8QMyEEfG_CqKQDH-M4g" name="Active ML Pipeline management" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_8nxVYMyEEfG_CqKQDH-M4g" extendedCase="_oWJTcMx9EfG_CqKQDH-M4g" extensionLocation="_8oJv4MyEEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_9dHpAMyEEfG_CqKQDH-M4g" name="Tenant-Level System Broadcasts" subject="_FNx5QMbwEfGrbP2CwrPsNQ">
+      <extend xmi:type="uml:Extend" xmi:id="_DWBWEMyFEfG_CqKQDH-M4g" extendedCase="_oWJTcMx9EfG_CqKQDH-M4g" extensionLocation="_DWSb0MyFEfG_CqKQDH-M4g"/>
+    </ownedUseCase>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_zgeroMyCEfG_CqKQDH-M4g" name="DataType14"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Hv-wQMbwEfGrbP2CwrPsNQ" name="Operator"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SilycMx7EfG_CqKQDH-M4g" memberEnd="_Si4tYMx7EfG_CqKQDH-M4g _Si7wsMx7EfG_CqKQDH-M4g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Six_sMx7EfG_CqKQDH-M4g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Si1qEMx7EfG_CqKQDH-M4g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Si4tYMx7EfG_CqKQDH-M4g" name="tenant management" type="_KoKeUMbwEfGrbP2CwrPsNQ" association="_SilycMx7EfG_CqKQDH-M4g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Si7wsMx7EfG_CqKQDH-M4g" name="operator" type="_Hv-wQMbwEfGrbP2CwrPsNQ" association="_SilycMx7EfG_CqKQDH-M4g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_svOB8Mx8EfG_CqKQDH-M4g" memberEnd="_svZBEMx8EfG_CqKQDH-M4g _svZoIMx8EfG_CqKQDH-M4g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_svVWsMx8EfG_CqKQDH-M4g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_svXy8Mx8EfG_CqKQDH-M4g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_svZBEMx8EfG_CqKQDH-M4g" name="subscription and metering management" type="_YjUJUMx8EfG_CqKQDH-M4g" association="_svOB8Mx8EfG_CqKQDH-M4g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_svZoIMx8EfG_CqKQDH-M4g" name="operator" type="_Hv-wQMbwEfGrbP2CwrPsNQ" association="_svOB8Mx8EfG_CqKQDH-M4g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wSfUYMx8EfG_CqKQDH-M4g" memberEnd="_wSyPUMx8EfG_CqKQDH-M4g _wS0rkMx8EfG_CqKQDH-M4g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wStW0Mx8EfG_CqKQDH-M4g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wSwaIMx8EfG_CqKQDH-M4g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wSyPUMx8EfG_CqKQDH-M4g" name="operator management" type="_UMoc8Mx8EfG_CqKQDH-M4g" association="_wSfUYMx8EfG_CqKQDH-M4g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wS0rkMx8EfG_CqKQDH-M4g" name="operator" type="_Hv-wQMbwEfGrbP2CwrPsNQ" association="_wSfUYMx8EfG_CqKQDH-M4g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QHhhYMx_EfG_CqKQDH-M4g" memberEnd="_QH7xEMx_EfG_CqKQDH-M4g _QH-NUMx_EfG_CqKQDH-M4g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QH4GsMx_EfG_CqKQDH-M4g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QH6i8Mx_EfG_CqKQDH-M4g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QH7xEMx_EfG_CqKQDH-M4g" name="global and cross university services" type="_oWJTcMx9EfG_CqKQDH-M4g" association="_QHhhYMx_EfG_CqKQDH-M4g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QH-NUMx_EfG_CqKQDH-M4g" name="operator" type="_Hv-wQMbwEfGrbP2CwrPsNQ" association="_QHhhYMx_EfG_CqKQDH-M4g"/>
+  </packagedElement>
+</uml:Model>
