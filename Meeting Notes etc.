@@ -23,3 +23,48 @@
 -James's and Matt's quality requirements analysis completed and reviewed by the group
 -Group will begin the completion of task 3 over the next week
 -Next week we will discuss the task 3 models and see if they require improvment
+
+
+
+-Meeting notes Week 4
+Meeting agenda: 
+Establishing where we are at with our work
+“discuss where the data is needed by the subsystem to respond to users' requests should come from, such as from users' input, or from the data stored in the system. In case the data should be from the information stored in the system, which subsystem should provide the data”
+
+Meeting:
+Who is present: James, Matthew, Ahmed, Brook
+Decided on new meeting time, between the lecture and practical Tuesday 12pm - 1pm, as the practical work makes it difficult to talk and have an actual meeting, unlike COMP4035 topic 1. This means we can coordinate our workflows better and keep up to date with others’ work
+Brook: Struggling with practical work, using this week to catch up with them, and then make a start on the coursework, plans to make good progress on the coursework next week
+James: Completed task 2 and task 3a in the coursework. Struggled a bit with 3a due to Papyrus’ lacking ease of use. Other than that, currently on track and making good progress
+Matthew: Done task 2 and caught up on all of the practical work besides the Papyrus tasks, will start making good progress on coursework from today/this week. Needs to upload week 3 tasks to github
+Ahmed: Plans on finishing task 2 and uploading it by Thursday, making a start on task 3 by Friday
+Where the data is needed by subsystems to respond to users’ request should come from:
+Uniform Student Subsystem (Matthew) example: Requesting a room - number of rooms available, price, time period available, location in the building - all data stored in the subsystem (online server?); Help services - FAQ available natively on-app, and phone number/email available for further questions, actual number and email stored on the app but managed remotely by staff; Leaving the dorm - submitting information on leave, some user input may be required such as lost property and transferred to servers
+
+
+
+Meeting minutes: 35
+Notes and minutes approved by team?: yes
+Amendments as result of comments: none
+Actions by group members for the following week: Catching up on practicals for some, making progress on task 3a and 3b for coursework for others
+
+
+
+-Meeting notes Week 5
+
+Meeting agenda: 
+Catching up on each others’ work and establishing goals for the consolidation week
+
+Meeting:
+Who is present: Matthew, James, Brook
+James: wants to redo task 3a because it deleted, and complete task 3b by the next meeting
+Brook: Started task 2, clarified some issues and plans to finish task 2 and task 3 by the next meeting
+Matthew: Plans to complete task 2 and task 3 by the next meeting
+Ahmed: Finished and uploaded task 2, plans to complete task 3 this week
+
+
+
+Meeting minutes: 20
+Notes and minutes approved by team?: Yes
+Amendments as result of comments: None
+Actions by group members for the following week: completing task 2 and 3
