@@ -1,0 +1,43 @@
+FR-AO-3.4 (Incident & Disciplinary Governance): The subsystem shall centralize incident reports logged by wardens 
+(e.g., noise complaints, safety breaches), allowing accommodation officers to initiate formal student disciplinary 
+processes or welfare escalations.
+
+
+
+Use case name: Incident & Disciplinary Governance
+Participant(s): Wardens, Accommodation Staff
+Entry condition(s): A warden has an incident to report
+Exit condition(s): The incident is logged in a database for accommodation staff to reference and take appropriate action
+
+Flow of events: 
+1. The warden logs onto the system using their warden ID and password. 
+2. The system checks the validity of the warden ID and password against its database. 
+3. Login details are valid
+4. The system loads the warden hub page. 
+5. A warden selects "report an incident". 
+6. The system displays a page containing a form for the warden to input details. 
+7. The warden enters their warden ID, title for the incident, description, time/date, location, 
+and optionally a photo or video of the incident. 
+8. The system checks the validity of the warden ID, checks that the title and description of the
+incident has been entered and isn't too long, checks that the date/time is not in the
+future, and checks that the photo/video is below a specific size. 
+9. The details are valid and are uploaded into the system. 
+10. The incident is added to the "ongoing" category, and added to the list of incidents under
+that warden's profile. 
+11. Accommodation staff deals with the time-sensitive part of the incident. 
+12. The incident is moved from "ongoing" to the "archive" category. 
+
+Exceptional conditions and alternative flow of events:
+3a. The warden enters invalid credentials. 
+	1. Display "invalid credentials" and return to step 1. 
+7a. The warden does not complete the form and instead decides to quit. 
+	1. Discard the form and return to the warden hub page. 
+7b. The warden uploads media. 
+	1. Upload the media as linked to the form and continue to step 8. 
+9a. Any of the warden ID, title, description, date/time, location, media is invalid. 
+	1. Display error message pertaining to invalid field, return to step 7. 
+Special requirements: 
+1. Encryption should be used for the data traffic from the warden's personal device to the warden hub system. 
+2. It should take no more than 15 seconds for the system to evaluate the validity of the form entry and
+upload it to the system under a reasonable internet connection. 
+3. Warden IDs are linked to the warden's personal details, e.g., name, work phone number and email

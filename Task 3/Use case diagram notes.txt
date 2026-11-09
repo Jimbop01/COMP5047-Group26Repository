@@ -1,0 +1,46 @@
+Subject
+ - The system under consideration
+   > Accommodation office subsystem
+Actor(s)
+ - Human users
+   > Accommodation staff
+   > Students
+   > Wardens (complaints, damage report submissions)
+ - Other systems
+   > University
+   > AI sorting system
+   > Accommodation database(?)
+   > Telemetry data from IoT boiler/water temp sensors
+   > Contractor
+   > National tenancy deposit protection schemes
+   > Smart meter reading data
+Use case
+ - A type of uses of the system
+ - A specification of the behaviour of the subject 
+	- In the form of a set of interactions between the actors and the subject
+	- No reference to the internal structure of the subject
+	- Include all possible variations of the behaviour
+	  - Normal operations 
+	  - Exceptional behaviours, Error handling, etc. 
+   > Configurable allocation criteria. staff define application rules and quotas. 
+   > lifestyle compatability clustering. interacts with students (their data)
+   > allocation override. interacts with staff and students. extention of clustering
+   > multi-attribute dynamic pricing. interacts with staff (& students?)
+   > tenancy agreement lifecycle. interacts with staff and students
+   > room inventory setup
+   > incident & disciplinary governance. relates to staff and wardens
+   > plant room maintenance. interacts with staff
+   > predictive maintenance. interacts with staff, boiler/water sensors
+   > contractor & work order management. interacts with contractors
+   > turnaround and deep cleaning scheduling. interacts with staff
+   > compliance registry. interacts with staff
+   > audit expiration alerts. interacts with staff
+   > warden recruitment & profiles. interacts with staff and wardens
+   > duty roster scheduling. interacts with staff and wardens
+   > warden performance oversight. interacts with staff and wardens
+   > automated invoicing. interacts with university
+   > damage penalty adjudication. interacts with staff, wardens, students
+   > deposit protection and returns. interacts with students, national tenancy deposit protection schemes, damage penantly adjudication
+   > occupancy and void tracking. interacts with staff, lifestyle compatability clustering
+   > sustainability and utility analytics. interacts with smart meters
+   > maintenance SLA dashboards. interacts with staff, students (residents), warden performance oversight
