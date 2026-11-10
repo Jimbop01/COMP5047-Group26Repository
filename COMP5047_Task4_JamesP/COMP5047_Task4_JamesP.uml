@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_B0YW8Nd3EfGidrRopcrSVw" name="COMP5047_Task4_JamesP">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_B_IOYNd3EfGidrRopcrSVw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_X5-8INd3EfGidrRopcrSVw" name="Operator Subsystem">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_WKGJENzsEfGWUYKNuPa5xA" name="Port3" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_4QuQINzsEfGWUYKNuPa5xA" name="Port4" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_kxgXANzvEfGWUYKNuPa5xA" name="Port6" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_wBC8INzwEfGWUYKNuPa5xA" name="Port8" aggregation="composite"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_ROu0kNznEfGWUYKNuPa5xA" name="Automated tenant setup">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_UwFpMNzsEfGWUYKNuPa5xA" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_DceaENzxEfGWUYKNuPa5xA" client="_ROu0kNznEfGWUYKNuPa5xA" supplier="_FWpr8NzqEfGWUYKNuPa5xA" contract="_FWpr8NzqEfGWUYKNuPa5xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_vc0nANzrEfGWUYKNuPa5xA" name="Tenant management">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_2TsiwNzsEfGWUYKNuPa5xA" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_HF5-4NzxEfGWUYKNuPa5xA" client="_vc0nANzrEfGWUYKNuPa5xA" supplier="_0TcXsNzrEfGWUYKNuPa5xA" contract="_0TcXsNzrEfGWUYKNuPa5xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_R_nQMNztEfGWUYKNuPa5xA" name="Tenant Announcement">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_hKQjgNzvEfGWUYKNuPa5xA" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_IDMtkNzxEfGWUYKNuPa5xA" client="_R_nQMNztEfGWUYKNuPa5xA" supplier="_-XujQNzvEfGWUYKNuPa5xA" contract="_-XujQNzvEfGWUYKNuPa5xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_qAzQ8NzwEfGWUYKNuPa5xA" name="Billing Management">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_typK4NzwEfGWUYKNuPa5xA" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_PJlhcNzxEfGWUYKNuPa5xA" client="_qAzQ8NzwEfGWUYKNuPa5xA" supplier="_Jkv_4NzxEfGWUYKNuPa5xA" contract="_Jkv_4NzxEfGWUYKNuPa5xA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0t6fcNzmEfGWUYKNuPa5xA" name="Accomodation Office Subsystem">
+    <packagedElement xmi:type="uml:Component" xmi:id="_KFQ6sNzrEfGWUYKNuPa5xA" name="tenant setup">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_RCJlkNzxEfGWUYKNuPa5xA" client="_KFQ6sNzrEfGWUYKNuPa5xA" supplier="_sb_IsNzqEfGWUYKNuPa5xA" contract="_sb_IsNzqEfGWUYKNuPa5xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_m_Vn4NzsEfGWUYKNuPa5xA" name="Tenant Information">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_QUzXYNzxEfGWUYKNuPa5xA" client="_m_Vn4NzsEfGWUYKNuPa5xA" supplier="_igT30NzsEfGWUYKNuPa5xA" contract="_igT30NzsEfGWUYKNuPa5xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_I1DTMNzvEfGWUYKNuPa5xA" name="Office Announcements">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-xc1YNzwEfGWUYKNuPa5xA" client="_I1DTMNzvEfGWUYKNuPa5xA" supplier="_uoHPwNzvEfGWUYKNuPa5xA" contract="_uoHPwNzvEfGWUYKNuPa5xA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_douhANzwEfGWUYKNuPa5xA" name="Billing Information">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9SaEgNzwEfGWUYKNuPa5xA" client="_douhANzwEfGWUYKNuPa5xA" supplier="_nk5PMNzwEfGWUYKNuPa5xA" contract="_nk5PMNzwEfGWUYKNuPa5xA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FWpr8NzqEfGWUYKNuPa5xA" name="set up new tenant"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_aq7h4NzqEfGWUYKNuPa5xA" name="tenant setup"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_sb_IsNzqEfGWUYKNuPa5xA" name=""/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_B6sF8NzrEfGWUYKNuPa5xA" client="_B0YW8Nd3EfGidrRopcrSVw" supplier="_sb_IsNzqEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_0TcXsNzrEfGWUYKNuPa5xA" name="Manage Tenants"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KYVyQNzsEfGWUYKNuPa5xA" name="Tenant Management"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Yr-3ANzsEfGWUYKNuPa5xA" client="_UwFpMNzsEfGWUYKNuPa5xA" supplier="_WKGJENzsEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bWpGcNzsEfGWUYKNuPa5xA" client="_WKGJENzsEfGWUYKNuPa5xA" supplier="_aq7h4NzqEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_igT30NzsEfGWUYKNuPa5xA" name=""/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_8b0XkNzsEfGWUYKNuPa5xA" client="_2TsiwNzsEfGWUYKNuPa5xA" supplier="_4QuQINzsEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_9cRvANzsEfGWUYKNuPa5xA" client="_KYVyQNzsEfGWUYKNuPa5xA" supplier="_igT30NzsEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-9VSENzsEfGWUYKNuPa5xA" client="_4QuQINzsEfGWUYKNuPa5xA" supplier="_KYVyQNzsEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_arhQYNztEfGWUYKNuPa5xA" name="Warden Subsystem">
+    <packagedElement xmi:type="uml:Component" xmi:id="_VMslUNzvEfGWUYKNuPa5xA" name="Warden Announcements">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_BZJ3cNzxEfGWUYKNuPa5xA" client="_VMslUNzvEfGWUYKNuPa5xA" supplier="_yAlAYNzvEfGWUYKNuPa5xA" contract="_yAlAYNzvEfGWUYKNuPa5xA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_fDqVUNztEfGWUYKNuPa5xA" name="Student Subsystem">
+    <packagedElement xmi:type="uml:Component" xmi:id="_YGUd0NzvEfGWUYKNuPa5xA" name="Student Announcements">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_CODfINzxEfGWUYKNuPa5xA" client="_YGUd0NzvEfGWUYKNuPa5xA" supplier="_zuzcwNzvEfGWUYKNuPa5xA" contract="_zuzcwNzvEfGWUYKNuPa5xA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qPpasNzvEfGWUYKNuPa5xA" client="_hKQjgNzvEfGWUYKNuPa5xA" supplier="_kxgXANzvEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_rdcDgNzvEfGWUYKNuPa5xA" name="Announcements"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_uoHPwNzvEfGWUYKNuPa5xA" name=""/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_yAlAYNzvEfGWUYKNuPa5xA" name=""/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zuzcwNzvEfGWUYKNuPa5xA" name=""/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_49cr4NzvEfGWUYKNuPa5xA" client="_kxgXANzvEfGWUYKNuPa5xA" supplier="_rdcDgNzvEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_507tgNzvEfGWUYKNuPa5xA" client="_rdcDgNzvEfGWUYKNuPa5xA" supplier="_uoHPwNzvEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6_zlMNzvEfGWUYKNuPa5xA" client="_rdcDgNzvEfGWUYKNuPa5xA" supplier="_zuzcwNzvEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_9a1dMNzvEfGWUYKNuPa5xA" client="_rdcDgNzvEfGWUYKNuPa5xA" supplier="_yAlAYNzvEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-XujQNzvEfGWUYKNuPa5xA" name="Tenant announcements"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_nk5PMNzwEfGWUYKNuPa5xA" name=""/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_zVTiMNzwEfGWUYKNuPa5xA" client="_typK4NzwEfGWUYKNuPa5xA" supplier="_wBC8INzwEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_04DHUNzwEfGWUYKNuPa5xA" name="Billing Information"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6g170NzwEfGWUYKNuPa5xA" client="_wBC8INzwEfGWUYKNuPa5xA" supplier="_04DHUNzwEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_7vlm4NzwEfGWUYKNuPa5xA" client="_04DHUNzwEfGWUYKNuPa5xA" supplier="_nk5PMNzwEfGWUYKNuPa5xA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Jkv_4NzxEfGWUYKNuPa5xA" name="Manage Billing"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4QmGkNznEfGWUYKNuPa5xA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4QtbUNznEfGWUYKNuPa5xA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
