@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WsmnIOH4EfGxUIcrVYt5JA" name="Warden_UseCase_19373929">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_WusR0OH4EfGxUIcrVYt5JA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_mybbMOH4EfGxUIcrVYt5JA" name="Warden Subsystem" useCase="_AP_asOH5EfGxUIcrVYt5JA _M0XhQOH5EfGxUIcrVYt5JA _Od5q4OH5EfGxUIcrVYt5JA _b3GgoOH5EfGxUIcrVYt5JA _dFeYQOH5EfGxUIcrVYt5JA _idSxgOH5EfGxUIcrVYt5JA _uxcDsOH5EfGxUIcrVYt5JA _8cGc4OH5EfGxUIcrVYt5JA _-0WGoOH5EfGxUIcrVYt5JA _BoIc4OH6EfGxUIcrVYt5JA _okVkEOIAEfGxUIcrVYt5JA _qrRbYOIAEfGxUIcrVYt5JA _vb7uAOIAEfGxUIcrVYt5JA _zxex8OIAEfGxUIcrVYt5JA _2OC7AOIAEfGxUIcrVYt5JA _5pixgOIAEfGxUIcrVYt5JA _9tl1wOIAEfGxUIcrVYt5JA _BWRzsOIBEfGxUIcrVYt5JA _Dnj50OIBEfGxUIcrVYt5JA _GNKDEOIBEfGxUIcrVYt5JA _6D9AIOIBEfGxUIcrVYt5JA _91G9kOIBEfGxUIcrVYt5JA _DY_c4OICEfGxUIcrVYt5JA _adrggOICEfGxUIcrVYt5JA _c0xTsOICEfGxUIcrVYt5JA _h6wWEOICEfGxUIcrVYt5JA _kSZi4OICEfGxUIcrVYt5JA _oPbZIOICEfGxUIcrVYt5JA _DlcvEOIDEfGxUIcrVYt5JA">
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_ufKqEOLMEfGxUIcrVYt5JA" name="RedefinableTemplateSignature30"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AP_asOH5EfGxUIcrVYt5JA" name="Log in" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_M0XhQOH5EfGxUIcrVYt5JA" name="Record shift handover" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Od5q4OH5EfGxUIcrVYt5JA" name="Set duty status" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_b3GgoOH5EfGxUIcrVYt5JA" name="Triage maintenance ticket" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Dm5-AOK7EfGxUIcrVYt5JA" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dFeYQOH5EfGxUIcrVYt5JA" name="Resolve maintenance ticket" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_GMdrAOK7EfGxUIcrVYt5JA" name="ExtensionPoint2"/>
+      <include xmi:type="uml:Include" xmi:id="_L-gPAOKjEfGxUIcrVYt5JA" addition="_-0WGoOH5EfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_idSxgOH5EfGxUIcrVYt5JA" name="Manage inventory" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_uxcDsOH5EfGxUIcrVYt5JA" name="Call out emergency contractor" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_8cGc4OH5EfGxUIcrVYt5JA" name="Escalate to contractor" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extend xmi:type="uml:Extend" xmi:id="_Dm2ToOK7EfGxUIcrVYt5JA" extendedCase="_b3GgoOH5EfGxUIcrVYt5JA" extensionLocation="_Dm5-AOK7EfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_-0WGoOH5EfGxUIcrVYt5JA" name="Capture proof of repair" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_BoIc4OH6EfGxUIcrVYt5JA" name="Use spare parts" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extend xmi:type="uml:Extend" xmi:id="_GMZZkOK7EfGxUIcrVYt5JA" extendedCase="_dFeYQOH5EfGxUIcrVYt5JA" extensionLocation="_GMdrAOK7EfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_okVkEOIAEfGxUIcrVYt5JA" name="Intake parcel" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <include xmi:type="uml:Include" xmi:id="_WxROAOKjEfGxUIcrVYt5JA" addition="_BWRzsOIBEfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_qrRbYOIAEfGxUIcrVYt5JA" name="Hand over parcel" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <include xmi:type="uml:Include" xmi:id="_7tMPwOK6EfGxUIcrVYt5JA" addition="_Dnj50OIBEfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_vb7uAOIAEfGxUIcrVYt5JA" name="Chase overdue parcels" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_zxex8OIAEfGxUIcrVYt5JA" name="Log visitor" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_2OC7AOIAEfGxUIcrVYt5JA" name="Issue temporary key" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_5pixgOIAEfGxUIcrVYt5JA" name="Loan / return hall property" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_9tl1wOIAEfGxUIcrVYt5JA" name="Review overdue loans" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_KGKgcOK7EfGxUIcrVYt5JA" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_BWRzsOIBEfGxUIcrVYt5JA" name="Send pickup notification" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Dnj50OIBEfGxUIcrVYt5JA" name="Scan pickup QR code" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_GNKDEOIBEfGxUIcrVYt5JA" name="Pass replacement charge" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extend xmi:type="uml:Extend" xmi:id="_KGG2EOK7EfGxUIcrVYt5JA" extendedCase="_9tl1wOIAEfGxUIcrVYt5JA" extensionLocation="_KGKgcOK7EfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6D9AIOIBEfGxUIcrVYt5JA" name="Conduct inspection" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_M6gQUOK7EfGxUIcrVYt5JA" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_91G9kOIBEfGxUIcrVYt5JA" name="Respond to facility alert" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DY_c4OICEfGxUIcrVYt5JA" name="Log incident" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_adrggOICEfGxUIcrVYt5JA" name="Broadcast emergency alert" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_c0xTsOICEfGxUIcrVYt5JA" name="Monitor evacuation headcount" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_h6wWEOICEfGxUIcrVYt5JA" name="Conduct welfare check" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_kSZi4OICEfGxUIcrVYt5JA" name="Post hall notice" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_oPbZIOICEfGxUIcrVYt5JA" name="Chat with resident" subject="_mybbMOH4EfGxUIcrVYt5JA"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DlcvEOIDEfGxUIcrVYt5JA" name="Assess damage with AI" subject="_mybbMOH4EfGxUIcrVYt5JA">
+      <extend xmi:type="uml:Extend" xmi:id="_M6WfUOK7EfGxUIcrVYt5JA" extendedCase="_6D9AIOIBEfGxUIcrVYt5JA" extensionLocation="_M6gQUOK7EfGxUIcrVYt5JA"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wNau8OH4EfGxUIcrVYt5JA" name="Warden"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_v9tokOIEEfGxUIcrVYt5JA" name="University SSO"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_0RS9oOIEEfGxUIcrVYt5JA" name="Contractor"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_6IurEOIEEfGxUIcrVYt5JA" name="Student"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_-2go0OIEEfGxUIcrVYt5JA" name="Accommodation Office"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Bk0pMOIFEfGxUIcrVYt5JA" name="IoT Sensor"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Wzt98OIHEfGxUIcrVYt5JA" memberEnd="_WzwaMOIHEfGxUIcrVYt5JA _WzwaMeIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WzvzIOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WzvzIeIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzwaMOIHEfGxUIcrVYt5JA" name="log in" type="_AP_asOH5EfGxUIcrVYt5JA" association="_Wzt98OIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WzwaMeIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_Wzt98OIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jVFz0OIHEfGxUIcrVYt5JA" memberEnd="_jVIQEuIHEfGxUIcrVYt5JA _jVI3IOIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jVIQEOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jVIQEeIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jVIQEuIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_jVFz0OIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jVI3IOIHEfGxUIcrVYt5JA" name="record shift handover" type="_M0XhQOH5EfGxUIcrVYt5JA" association="_jVFz0OIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_k0z6IOIHEfGxUIcrVYt5JA" memberEnd="_k02WYuIHEfGxUIcrVYt5JA _k029cOIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k02WYOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k02WYeIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_k02WYuIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_k0z6IOIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_k029cOIHEfGxUIcrVYt5JA" name="set duty status" type="_Od5q4OH5EfGxUIcrVYt5JA" association="_k0z6IOIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mdGGkOIHEfGxUIcrVYt5JA" memberEnd="_mdIi0eIHEfGxUIcrVYt5JA _mdIi0uIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdH7wOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdIi0OIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mdIi0eIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_mdGGkOIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mdIi0uIHEfGxUIcrVYt5JA" name="triage maintenance ticket" type="_b3GgoOH5EfGxUIcrVYt5JA" association="_mdGGkOIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tdzJMOIHEfGxUIcrVYt5JA" memberEnd="_teMx0uIHEfGxUIcrVYt5JA _teNY4OIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_teMx0OIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_teMx0eIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_teMx0uIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_tdzJMOIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_teNY4OIHEfGxUIcrVYt5JA" name="resolve maintenance ticket" type="_dFeYQOH5EfGxUIcrVYt5JA" association="_tdzJMOIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wzYk8OIHEfGxUIcrVYt5JA" memberEnd="_wzbBMuIHEfGxUIcrVYt5JA _wzboQOIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wzbBMOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wzbBMeIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wzbBMuIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_wzYk8OIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wzboQOIHEfGxUIcrVYt5JA" name="manage inventory" type="_idSxgOH5EfGxUIcrVYt5JA" association="_wzYk8OIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yljGIOIHEfGxUIcrVYt5JA" memberEnd="_ylmwgeIHEfGxUIcrVYt5JA _ylmwguIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ylmJcOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ylmwgOIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ylmwgeIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_yljGIOIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ylmwguIHEfGxUIcrVYt5JA" name="call out emergency contractor" type="_uxcDsOH5EfGxUIcrVYt5JA" association="_yljGIOIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zwM7YOIHEfGxUIcrVYt5JA" memberEnd="_zwPXouIHEfGxUIcrVYt5JA _zwPXo-IHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zwPXoOIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zwPXoeIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zwPXouIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_zwM7YOIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zwPXo-IHEfGxUIcrVYt5JA" name="intake parcel" type="_okVkEOIAEfGxUIcrVYt5JA" association="_zwM7YOIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1MFqkOIHEfGxUIcrVYt5JA" memberEnd="_1MIG0uIHEfGxUIcrVYt5JA _1MIt4OIHEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1MIG0OIHEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1MIG0eIHEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1MIG0uIHEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_1MFqkOIHEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1MIt4OIHEfGxUIcrVYt5JA" name="hand over parcel" type="_qrRbYOIAEfGxUIcrVYt5JA" association="_1MFqkOIHEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5aS68OIIEfGxUIcrVYt5JA" memberEnd="_5aV-QeIIEfGxUIcrVYt5JA _5aV-QuIIEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5aVXMOIIEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5aV-QOIIEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5aV-QeIIEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_5aS68OIIEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5aV-QuIIEfGxUIcrVYt5JA" name="chase overdue parcels" type="_vb7uAOIAEfGxUIcrVYt5JA" association="_5aS68OIIEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7hQncOIIEfGxUIcrVYt5JA" memberEnd="_7hU44eIIEfGxUIcrVYt5JA _7hU44uIIEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7hUR0OIIEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7hU44OIIEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7hU44eIIEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_7hQncOIIEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7hU44uIIEfGxUIcrVYt5JA" name="log visitor" type="_zxex8OIAEfGxUIcrVYt5JA" association="_7hQncOIIEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9Chl4OIIEfGxUIcrVYt5JA" memberEnd="_9CkCIuIIEfGxUIcrVYt5JA _9CkpMOIIEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9CkCIOIIEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9CkCIeIIEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9CkCIuIIEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_9Chl4OIIEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9CkpMOIIEfGxUIcrVYt5JA" name="issue temporary key" type="_2OC7AOIAEfGxUIcrVYt5JA" association="_9Chl4OIIEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_A1N0YOIJEfGxUIcrVYt5JA" memberEnd="_A1Q3sOIJEfGxUIcrVYt5JA _A1Q3seIJEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A1QQoOIJEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A1QQoeIJEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_A1Q3sOIJEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_A1N0YOIJEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_A1Q3seIJEfGxUIcrVYt5JA" name="loan / return hall property" type="_5pixgOIAEfGxUIcrVYt5JA" association="_A1N0YOIJEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NRRscOIJEfGxUIcrVYt5JA" memberEnd="_NRzQ4uIJEfGxUIcrVYt5JA _NRz38OIJEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NRzQ4OIJEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NRzQ4eIJEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NRzQ4uIJEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_NRRscOIJEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NRz38OIJEfGxUIcrVYt5JA" name="review overdue loans" type="_9tl1wOIAEfGxUIcrVYt5JA" association="_NRRscOIJEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_S067MOIJEfGxUIcrVYt5JA" memberEnd="_S1C3AeIJEfGxUIcrVYt5JA _S1C3AuIJEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S1CP8OIJEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S1C3AOIJEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_S1C3AeIJEfGxUIcrVYt5JA" name="warden" type="_wNau8OH4EfGxUIcrVYt5JA" association="_S067MOIJEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_S1C3AuIJEfGxUIcrVYt5JA" name="conduct inspection" type="_6D9AIOIBEfGxUIcrVYt5JA" association="_S067MOIJEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WZA3kOIKEfGxUIcrVYt5JA" memberEnd="_WZCswuIKEfGxUIcrVYt5JA _WZCsw-IKEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WZCswOIKEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WZCsweIKEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WZCswuIKEfGxUIcrVYt5JA" name="warden    " type="_wNau8OH4EfGxUIcrVYt5JA" association="_WZA3kOIKEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WZCsw-IKEfGxUIcrVYt5JA" name="respond to facility alert" type="_91G9kOIBEfGxUIcrVYt5JA" association="_WZA3kOIKEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sYdKYOIKEfGxUIcrVYt5JA" memberEnd="_sYg0wOIKEfGxUIcrVYt5JA _sYg0weIKEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sYgNsOIKEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sYgNseIKEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sYg0wOIKEfGxUIcrVYt5JA" name="warden    " type="_wNau8OH4EfGxUIcrVYt5JA" association="_sYdKYOIKEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sYg0weIKEfGxUIcrVYt5JA" name="log incident" type="_DY_c4OICEfGxUIcrVYt5JA" association="_sYdKYOIKEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7Ee58OIKEfGxUIcrVYt5JA" memberEnd="_7ExN0OIKEfGxUIcrVYt5JA _7ExN0eIKEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7EwmwOIKEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7EwmweIKEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7ExN0OIKEfGxUIcrVYt5JA" type="_wNau8OH4EfGxUIcrVYt5JA" association="_7Ee58OIKEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7ExN0eIKEfGxUIcrVYt5JA" name="broadcast emergency alert" type="_adrggOICEfGxUIcrVYt5JA" association="_7Ee58OIKEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EIJS0OILEfGxUIcrVYt5JA" memberEnd="_EIM9MOILEfGxUIcrVYt5JA _EIM9MeILEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EIMWIOILEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EIMWIeILEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EIM9MOILEfGxUIcrVYt5JA" name="warden    " type="_wNau8OH4EfGxUIcrVYt5JA" association="_EIJS0OILEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EIM9MeILEfGxUIcrVYt5JA" name="monitor evacuation headcount" type="_c0xTsOICEfGxUIcrVYt5JA" association="_EIJS0OILEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HqTyAOILEfGxUIcrVYt5JA" memberEnd="_HqW1UOILEfGxUIcrVYt5JA _HqW1UeILEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HqWOQOILEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HqWOQeILEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HqW1UOILEfGxUIcrVYt5JA" name="warden    " type="_wNau8OH4EfGxUIcrVYt5JA" association="_HqTyAOILEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HqW1UeILEfGxUIcrVYt5JA" name="conduct welfare check" type="_h6wWEOICEfGxUIcrVYt5JA" association="_HqTyAOILEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mh2vwOILEfGxUIcrVYt5JA" memberEnd="_Mh6aIeILEfGxUIcrVYt5JA _Mh6aIuILEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Mh5zEOILEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Mh6aIOILEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Mh6aIeILEfGxUIcrVYt5JA" name="warden    " type="_wNau8OH4EfGxUIcrVYt5JA" association="_Mh2vwOILEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Mh6aIuILEfGxUIcrVYt5JA" name="post hall notice" type="_kSZi4OICEfGxUIcrVYt5JA" association="_Mh2vwOILEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RIrw8OILEfGxUIcrVYt5JA" memberEnd="_RIu0QuILEfGxUIcrVYt5JA _RIu0Q-ILEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RIu0QOILEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RIu0QeILEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RIu0QuILEfGxUIcrVYt5JA" name="warden    " type="_wNau8OH4EfGxUIcrVYt5JA" association="_RIrw8OILEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RIu0Q-ILEfGxUIcrVYt5JA" name="chat with resident" type="_oPbZIOICEfGxUIcrVYt5JA" association="_RIrw8OILEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VeQZUOInEfGxUIcrVYt5JA" memberEnd="_VeebwOInEfGxUIcrVYt5JA _VeebweInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ved0sOInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ved0seInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VeebwOInEfGxUIcrVYt5JA" name="university sso" type="_v9tokOIEEfGxUIcrVYt5JA" association="_VeQZUOInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VeebweInEfGxUIcrVYt5JA" name="log in" type="_AP_asOH5EfGxUIcrVYt5JA" association="_VeQZUOInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Y13OUOInEfGxUIcrVYt5JA" memberEnd="_Y17fwOInEfGxUIcrVYt5JA _Y17fweInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y164sOInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Y164seInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Y17fwOInEfGxUIcrVYt5JA" name="contractor" type="_0RS9oOIEEfGxUIcrVYt5JA" association="_Y13OUOInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Y17fweInEfGxUIcrVYt5JA" name="escalate to contractor" type="_8cGc4OH5EfGxUIcrVYt5JA" association="_Y13OUOInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dmWh0OInEfGxUIcrVYt5JA" memberEnd="_dmg54eInEfGxUIcrVYt5JA _dmhg8OInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dmgS0OInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dmg54OInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dmg54eInEfGxUIcrVYt5JA" name="contractor" type="_0RS9oOIEEfGxUIcrVYt5JA" association="_dmWh0OInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dmhg8OInEfGxUIcrVYt5JA" name="call out emergency contractor" type="_uxcDsOH5EfGxUIcrVYt5JA" association="_dmWh0OInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jO43oOInEfGxUIcrVYt5JA" memberEnd="_jO--QuInEfGxUIcrVYt5JA _jO_lUOInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jO--QOInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jO--QeInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jO--QuInEfGxUIcrVYt5JA" name="student" type="_6IurEOIEEfGxUIcrVYt5JA" association="_jO43oOInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jO_lUOInEfGxUIcrVYt5JA" name="send pickup notification" type="_BWRzsOIBEfGxUIcrVYt5JA" association="_jO43oOInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lIoAcOInEfGxUIcrVYt5JA" memberEnd="_lIpOkuInEfGxUIcrVYt5JA _lIpOk-InEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lIpOkOInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lIpOkeInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lIpOkuInEfGxUIcrVYt5JA" name="student" type="_6IurEOIEEfGxUIcrVYt5JA" association="_lIoAcOInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lIpOk-InEfGxUIcrVYt5JA" name="scan pickup qr code" type="_Dnj50OIBEfGxUIcrVYt5JA" association="_lIoAcOInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wFxDcOInEfGxUIcrVYt5JA" memberEnd="_wF178OInEfGxUIcrVYt5JA _wF178eInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wF1U4OInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wF1U4eInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wF178OInEfGxUIcrVYt5JA" name="student" type="_6IurEOIEEfGxUIcrVYt5JA" association="_wFxDcOInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wF178eInEfGxUIcrVYt5JA" name="broadcast emergency alert" type="_adrggOICEfGxUIcrVYt5JA" association="_wFxDcOInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yyDDgOInEfGxUIcrVYt5JA" memberEnd="_yyK_UeInEfGxUIcrVYt5JA _yyK_UuInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yyKYQOInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yyK_UOInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yyK_UeInEfGxUIcrVYt5JA" name="student" type="_6IurEOIEEfGxUIcrVYt5JA" association="_yyDDgOInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yyK_UuInEfGxUIcrVYt5JA" name="monitor evacuation headcount" type="_c0xTsOICEfGxUIcrVYt5JA" association="_yyDDgOInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_69yV4OInEfGxUIcrVYt5JA" memberEnd="_693OYOInEfGxUIcrVYt5JA _693OYeInEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_692nUOInEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_692nUeInEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_693OYOInEfGxUIcrVYt5JA" name="student" type="_6IurEOIEEfGxUIcrVYt5JA" association="_69yV4OInEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_693OYeInEfGxUIcrVYt5JA" name="chat with resident" type="_oPbZIOICEfGxUIcrVYt5JA" association="_69yV4OInEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BoEckOIoEfGxUIcrVYt5JA" memberEnd="_BoJVEuIoEfGxUIcrVYt5JA _BoJVE-IoEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BoJVEOIoEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BoJVEeIoEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BoJVEuIoEfGxUIcrVYt5JA" name="accommodation office" type="_-2go0OIEEfGxUIcrVYt5JA" association="_BoEckOIoEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BoJVE-IoEfGxUIcrVYt5JA" name="conduct welfare check" type="_h6wWEOICEfGxUIcrVYt5JA" association="_BoEckOIoEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EaEqIOIoEfGxUIcrVYt5JA" memberEnd="_EaI7kOIoEfGxUIcrVYt5JA _EaI7keIoEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EaIUgOIoEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EaIUgeIoEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EaI7kOIoEfGxUIcrVYt5JA" name="iot sensor" type="_Bk0pMOIFEfGxUIcrVYt5JA" association="_EaEqIOIoEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EaI7keIoEfGxUIcrVYt5JA" name="respond to facility alert" type="_91G9kOIBEfGxUIcrVYt5JA" association="_EaEqIOIoEfGxUIcrVYt5JA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FCVHgOIpEfGxUIcrVYt5JA" memberEnd="_FCW8suIpEfGxUIcrVYt5JA _FCXjwOIpEfGxUIcrVYt5JA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FCW8sOIpEfGxUIcrVYt5JA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FCW8seIpEfGxUIcrVYt5JA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FCW8suIpEfGxUIcrVYt5JA" name="accommodation office" type="_-2go0OIEEfGxUIcrVYt5JA" association="_FCVHgOIpEfGxUIcrVYt5JA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FCXjwOIpEfGxUIcrVYt5JA" name="pass replacement charge" type="_GNKDEOIBEfGxUIcrVYt5JA" association="_FCVHgOIpEfGxUIcrVYt5JA"/>
+  </packagedElement>
+</uml:Model>
