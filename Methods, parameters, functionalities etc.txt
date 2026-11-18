@@ -1,0 +1,14 @@
+Methods, parameters, functionalities, meanings:
+- Cloud connection manager: Used to securely connect to the cloud services in order to view and manage the students and wardens. Parameters: login details (username, password, email etc.)
+
+- Student room application manager: Fetches and retrieves submitted student application details and allows staff to view them through staff login. Interfaces with University data hub to fetch student enrolment status and room attributes. Produces a price for a room based on the room attributes and issues tenancy agreements. Parameters: applications, room transfer requests, student enrolment status, room attributes, tenancy agreement
+
+- Student rent and deposit manager: Interfaces with student financial accounts, university enterprise financial system and national tenancy deposit protection schemes to manage student finances. Generates invoices for things such as rent payments, damage repair costs, deposit returns. Links financial accounts to student applications. Parameters: payment details, deposit protection scheme details, invoices, university financial details
+
+- Room setup, inventory and maintenance manager: Stores data concerning the setup and maintenance of rooms, including having their inventory prepared for incoming students. Produces work orders to contractors, produces room cleaning, painting and repair schedules, and sends out audit expiration alerts. Parameters: room attributes, information and campuses, halls, buildings, flats, rooms, beds & facilities, telemetry data from IoT boiler & water temperature sensors, smart meter data, work orders, room cleaning painting and repair schedules, audit expiration alerts
+
+- Warden central system manager: Compiles data concerning the wardens e.g., personnel data, incident reports, and produces a warden visual shift planner. Parameters: warden profiles, operational metrics, damage/incident reports, warden visual shift planner
+
+- Accommodation staff system GUI: Used by the accommodation staff to access and configure details on the system
+
+- University data hub: Interfaces with systems like the room setup and maintenance service, university enterprise financial system, deposit protection schemes to centralise and store information to assist with processes involving information on the university such as verifying student status and university financial details. Parameters: university financial details, deposit protection scheme details, university characteristics, student enrolment status

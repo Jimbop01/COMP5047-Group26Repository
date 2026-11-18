@@ -1,0 +1,74 @@
+"b.The components and connectors in architectural designs should be specified adequately with details of their
+- Methods
+- Parameters
+- Functionalities
+- Meanings
+in a textual document. "
+
+Parts of the subsystem that require data from elsewhere:
+
+- Intake student applications
+	- Integrate with university student information system to verify enrolment status
+- Room transfer requests from students
+- Room attributes (used to established pricing for room type/features)
+- Information on the campuses, halls, buildings, apartments/flats, rooms, beds & facilities
+- Reports logged by wardens
+- Telemetry data from IoT boiler and water temperature sensors to flag anomalies
+- Service Level Agreements
+- Contractor invoices
+- Warden profiles & details
+- Warden operational metrics
+- Payment details for payment reconciliation
+- Submitted damage reports
+- National tenancy deposit schemes
+- Smart meter data
+
+Parts of the subsystem that provide data to other (sub)systems
+- Room pricing
+- Issue contracts to students and automated expiry/renewal notices
+	- Final room allocation
+- Dispatched Escalated Work Orders to external contractors
+- Room cleaning, painting, repair schedules
+- Audit expiration alerts 60, 30, 7 days prior to expiration
+- Warden visual shift planner
+- Generate rent invoices, interface with university enterprise financial system
+- Issue repair costs to student accounts
+- Interface with deposit protection scheme, calc deductions and issue deposit refunds
+
+
+Components inside the accommodation office subsystem block:
+- Student room application manager (application intake, room transfer requests, verify enrolment status, room attributes to determine pricing; room pricing, TA issuer)
+- Student rent and deposit manager (payment details, national tenancy deposit schemes; generate rent invoices - interface with university enterprise financial system, issue repair costs, issue deposit refunds)
+- Room setup, inventory and maintenance manager (room attributes, information on the campuses, halls, buildings, apartment/flats, rooms, beds & facilities, telemetry data from IoT boiler &
+water temp sensors, smart meter data; dispatch work orders to external contractors, room cleaning painting and repair schedules, audit expiration alerts)
+- Warden central system manager (warden profiles, operational metrics, damage reports, incident reports; warden visual shift planner)
+- Accommodation Staff System GUI - used to provide a user interface to the accommodation staff using the system
+- University data hub - interfaces with systems like the university enterprise financial system and deposit protection schemes to retrieve and store data such as student enrolment status and deposit protection details
+
+
+
+Components inside the cloud service block:
+- Student application service - requires login (authentication), interfaces with university for enrolment status, relates to room attributes for dynamic pricing
+- Student monetary service - relates to student application manager, interfaces with tenancy deposit schemes
+- Room setup and maintenance service
+- Warden Central System service - requires login (authentication)
+- University enterprise financial system
+- National deposit protection schemes
+- University data hub service
+
+
+
+Methods, parameters, functionalities, meanings:
+- Cloud connection manager: Used to securely connect to the cloud services in order to view and manage the students and wardens. Parameters: login details (username, password, email etc.)
+
+- Student room application manager: Fetches and retrieves submitted student application details and allows staff to view them through staff login. Interfaces with University data hub to fetch student enrolment status and room attributes. Produces a price for a room based on the room attributes and issues tenancy agreements. Parameters: applications, room transfer requests, student enrolment status, room attributes, tenancy agreement
+
+- Student rent and deposit manager: Interfaces with student financial accounts, university enterprise financial system and national tenancy deposit protection schemes to manage student finances. Generates invoices for things such as rent payments, damage repair costs, deposit returns. Links financial accounts to student applications. Parameters: payment details, deposit protection scheme details, invoices, university financial details
+
+- Room setup, inventory and maintenance manager: Stores data concerning the setup and maintenance of rooms, including having their inventory prepared for incoming students. Produces work orders to contractors, produces room cleaning, painting and repair schedules, and sends out audit expiration alerts. Parameters: room attributes, information and campuses, halls, buildings, flats, rooms, beds & facilities, telemetry data from IoT boiler & water temperature sensors, smart meter data, work orders, room cleaning painting and repair schedules, audit expiration alerts
+
+- Warden central system manager: Compiles data concerning the wardens e.g., personnel data, incident reports, and produces a warden visual shift planner. Parameters: warden profiles, operational metrics, damage/incident reports, warden visual shift planner
+
+- Accommodation staff system GUI: Used by the accommodation staff to access and configure details on the system
+
+- University data hub: Interfaces with systems like the room setup and maintenance service, university enterprise financial system, deposit protection schemes to centralise and store information to assist with processes involving information on the university such as verifying student status and university financial details. Parameters: university financial details, deposit protection scheme details, university characteristics, student enrolment status
